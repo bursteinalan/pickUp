@@ -1,6 +1,5 @@
-class Profile:
-    def __init__(self, name, age, gender, location):
-        self.name = name
-        self.age = age
-        self.gender = gender
-        
+from pymongo import MongoClient
+client = MongoClient()
+client = MongoClient('localhost', 27017)
+client.test_database
+db = client['test-database']
